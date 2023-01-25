@@ -1,0 +1,138 @@
+
+
+
+.container,html,body{
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+}
+
+.login_image{
+    
+    margin-left: 166px;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    
+}
+img.login_img{
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.right_box{
+    float:right;
+    margin-top: 34px;
+    margin-right: 155px;
+    
+}
+#comp_logo{
+    top: 106px;
+    left: 906px;
+    width: 272px;
+    height: 58px;
+}
+.tagline{
+    
+    color: #3E3E3E;
+    align-items: left;
+    font-size: 40px;
+    font-family: 'Roboto Light', sans-serif;
+    margin-top: 19.17px;
+}
+.exp{
+    color:#C8242F;
+    font-family: 'Roboto Black', sans-serif;
+}
+.loginacc{
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 300px;
+    color: #3E3E3E;
+    margin-top: 32px;
+    height:33px;
+    width: 260px;
+
+}
+.usernm{
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    margin-bottom: 27px;  
+    margin-top: 24px;
+    width: 429px;
+    height: 49px;
+}
+.pswd{
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    width: 429px;
+    height: 49px;
+}
+.login{
+    margin-top: 23.13px;
+}
+.login_button{
+    width:429px;
+}
+.butn_login{
+    border-radius: 23px;
+    margin-top: 31px;
+    width: 138px;
+    height: 45px;
+    background-color: #C8242F;
+    border: #C8242F;
+}
+.login_text{
+    color:white;
+    font-size: 18px;
+    width: 45px;
+    height: 24px;
+    font-family: Roboto;
+}
+.frg_pswd{
+    color: #ADADAD;
+    width: 121px;
+    height: 20px;
+    float:right;
+    margin-top: 43px;
+    margin-left: 170px;
+
+}
+.sign_up{
+    margin-top: 23.21px;
+}
+.new_memb{
+    width:160px;
+    height: 24px;
+    font-size: 15px;
+    color: #ADADAD;
+    font-family:'Roboto', sans-serif;
+    
+}
+.reg_link{
+    color: #C8242F;
+    height: 20px;
+    width: 80px;
+}
+
+.icon{
+    height:15px;
+    width: auto;
+}
+.menu{
+    margin-top: 34px;
+    margin-left: 29px;
+}
+.comp_logo{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.search{
+    margin-top: 32px;
+    margin-left: 77px;
+    height: 15px;
+    width: auto;
+}
+.search_input{
+    outline: none;
+    
+}
