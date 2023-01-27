@@ -2,52 +2,197 @@
     <head>
         <title>Dashboard</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="container">
-            <div class="header">
+        <div class="container_d">
 
-            <img src="images/menu-bar.svg" alt="menubar_icon" class="menu">
-            <img src="images/logo.svg" alt="logo_icon" class="comp_logo">
-            
-            <img src="images/search-icon.svg" class="search">
-            <input type="text" placeholder="Search" name="search" class="search_ip">
-            
-            <img src="images/notification-icon.svg" alt="notif_icon" class="icon">
-            <img src="images/profile.png" alt="profile notif">
-            <select class="dropdown">
-                <option selected>John Doe</option>
-            </select>
+            <div class="navigation_bar">
+                <nav>
+                    <ul class="nav_bar">
+                        <li><a><img src="images/menu-bar.svg" alt="menubar_icon" class="menu"></a></li>
+                        <li><a><img src="images/logo.svg" alt="logo_icon" class="comp_logo"></a></li>
+                        <li><a><img src="images/search-icon.svg" class="search"></a></li>
+                        <li><i class="fa fa-user icon">
+                        </i><input type="text" placeholder="Search" name="search" class="search_ip"></li>
+                        <li><a><img src="images/notification-icon.svg" alt="notif_icon" class="notif"></a></li>
+                        <li><a><img src="images/profile.png" alt="profile notif" class="profile_icon"></a></li>
+                        <li><label class="john">John Doe</label><button class="dropdown"><img src="images/downward-arrow.svg"></button></li>
+                        
+                    </ul>
+                </nav>
             </div>
 
             <div class="sidebar">
-            <table border="0">
-            <tr>
-                <td><img src="images/dashboard-active.svg" class="icon"> Dashboard<br></td>
-            </tr>
-            <tr>
-                <td><img src="images/graph-default.svg" class="icon">Analysis <br></td>
-            </tr>
-            <tr>
-                <td><img src="images/inbox-default.svg" class="icon">Inbox <br></td>
-            </tr>
-            <tr>
-                <td><img src="images/clock-default.svg" class="icon">History <br></td>
-            </tr>
-            <tr>
-                <td><img src="images/user-default.svg" class="icon">Users <br></td>
-            </tr>
-            <tr>
-                <td><img src="images/maintenance-default.svg" class="icon">Maintenance <br></td>
-            </tr>
-            <tr>
-                <td><img src="images/setting-default.svg" class="icon">Setting <br></td>
-            </tr>
-            </table>
+                
+                    <span class=sidebar_contents><img src="images/dashboard-active.svg" class="icon"> <span class="dashboard_active">Dashboard</span><br></span>
+                    <span class=sidebar_contents><img src="images/graph-default.svg" class="icon"><span>Analysis</span> <br></span>
+                    <span class=sidebar_contents><img src="images/inbox-default.svg" class="icon"><span>Inbox</span><br></span>
+                    <span class=sidebar_contents><img src="images/clock-default.svg" class="icon"><span>History</span> <br></span>
+                    <span class=sidebar_contents><img src="images/user-default.svg" class="icon"><span>Users</span> <br></span>
+                    <span class=sidebar_contents><img src="images/maintenance-default.svg" class="icon"><span>Maintenance</span><br></span>
+                    <span class=sidebar_contents><img src="images/setting-default.svg" class="icon"><span>Setting</span> <br></span>
+                   
+            </div>
+            
+            <div class="content_div">
+                <span class="heading">Dashboard</span>
+                <div class="info">
+                    <div class="info_text">
+                        <img src="images/star.svg" class="info_img1">
+                        <span class="num">23,456</span><br>
+                        New products
+                    </div>
+                    
+                    <div class="info_text">
+                        <img src="images/new-product.svg" class="info_img">
+                        
+                        <span class="num">2345</span><br>
+                        Added projects
+                    </div>
+                   
+                    <div class="info_text">
+                        <img src="images/total-product.svg" class="info_img">
+                        <span class="info_text">
+                            <span class="num">32,456</span><br>
+                            Total Products
+                    </div>
+                    
+                    
+                    <div class="info_text">
+                        <img src="images/dollar-filled.svg" class="info_img">
+                        <span class="info_text">
+                            <span class="num">5678</span><br>
+                            Todays sale
+                    </div>
+                    
+                    <div class="info_text">
+                        <img src="images/money-bag.svg" class="info_img">
+                        <span class="info_text">
+                        <span class="num">33,5342</span><br>
+                        Total Sale
+                    </div>
+                    
+                    
+                    
+
+                </div>
+            <div class="flex2">
+                <div class="sale">
+                        <span class="saletxt">Sale</span><span class="condition">Weekly Monthly <span class="yearly">Yearly</span></span><br>
+                        <img src="images/data-graph.png" class="datagraph">
+                </div>
+
+                <div class="sale_by_country">
+                    <span class="salebcountry">Sales by country</span>
+                    <img src="images/pie-chart.svg" class="piechart">
+                    <table class="country">
+                        <tr>
+                            <td><span class="dot1"></span></td>
+                            <td>United States of America</td>
+                            <td><span class="dot2"></span></td>
+                            <td></span>Canada</td>
+                        </tr>
+                        <tr>
+                            <td><span class="dot3"></span></td>
+                            <td>Russia</td>
+                            <td><span class="dot4"></span></td>
+                            <td>India</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>      
+
+                
+                <div class="invoice">
+                    <table class="invoice_tbl">
+                        <span class="invoice_txt">Invoices</span>
+                        <tr>
+                            <th>Invoice</th>
+                            <th>Company Name</th>
+                            <th>Email</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="paid">Paid</span></td>
+                            <td>$47,800</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Other</td>
+                            <td>jessica.hanson@example.com</td>
+                            <td>24 May, 2020</td>
+                            <td><span class="paid">Paid</span></td>
+                            <td>$98,000</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Vendor</td>
+                            <td>alma.lawson@example.com</td>
+                            <td>8 Sept, 2020</td>
+                            <td><span class="paid">Paid</span></td>
+                            <td>$20,900</td>
+                        </tr>
+                        <tr>
+                            <td>558612</td>
+                            <td>Property Management Company</td>
+                            <td>kenzi.lawson@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td><span class="paid">Paid</span></td>
+                            <td>$10,570</td>
+                        </tr>
+                        <tr>
+                            <td>651535</td>
+                            <td>Subcontractor Company</td>
+                            <td>jackson.graham@example.com</td>
+                            <td>1 Feb, 2020</td>
+                            <td><span class="failed">Failed</span></td>
+                            <td>$12,600</td>
+                        </tr>
+                        <tr>
+                            <td>653518</td>
+                            <td>Mortgage Company</td>
+                            <td>felicia.reid@example.com</td>
+                            <td>22 Oct, 2020</td>
+                            <td><span class="pending">Pending</span></td>
+                            <td>$12,600</td>
+                        </tr>
+                        <tr>
+                            <td>487441</td>
+                            <td>TPA</td>
+                            <td>dolores.chambers@example.com</td>
+                            <td>21 Sep, 2020</td>
+                            <td><span class="paid">Paid</span></td>
+                            <td>$11,170</td>   
+                        </tr>
+                        <tr>
+                            <td>267400</td>
+                            <td>Fire Department</td>
+                            <td>nevaeh.simmons@example.com</td>
+                            <td>17 Oct, 2020</td>
+                            <td><span class="failed">Failed</span></td>
+                            <td>$28,000</td>
+                        </tr>
+                        <tr>
+                            <td>449003</td>
+                            <td>Insurance Carrier</td>
+                            <td>curtis.weaver@example.com</td>
+                            <td>21 Sep, 2020</td>
+                            <td><span class="paid">Paid</span></td>
+                            <td>$10,000</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
-        </div>
+            </div>
     </body>
 </html>

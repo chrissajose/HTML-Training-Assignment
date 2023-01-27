@@ -1,13 +1,16 @@
 
-
-
-.container,html,body{
-    top: 0px;
-    left: 0px;
-    width: auto;
-    height: auto;
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color:#FAFAFA ;
+    overflow: auto;
 }
-
+.container{
+    background-color: #FAFAFA;
+    min-height: 100%;
+}
 .login_image{
     
     margin-left: 166px;
@@ -18,6 +21,8 @@
 img.login_img{
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0px 4px 31px #0000000A;;
+    border: 20px solid #FFFFFF;
     
 }
 .right_box{
@@ -37,16 +42,19 @@ img.login_img{
     color: #3E3E3E;
     align-items: left;
     font-size: 40px;
-    font-family: 'Roboto Light', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
     margin-top: 19.17px;
 }
 .exp{
     color:#C8242F;
     font-family: 'Roboto Black', sans-serif;
+    font-weight: 900px;
 }
 .loginacc{
-    font-family: 'Roboto Light', sans-serif;
-    font-weight: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
     color: #3E3E3E;
     margin-top: 32px;
     height:33px;
@@ -86,7 +94,7 @@ img.login_img{
     font-size: 18px;
     width: 45px;
     height: 24px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 .frg_pswd{
     color: #ADADAD;
@@ -95,6 +103,8 @@ img.login_img{
     float:right;
     margin-top: 43px;
     margin-left: 170px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 
 }
 .sign_up{
@@ -114,25 +124,293 @@ img.login_img{
     width: 80px;
 }
 
+
+.container_d{
+    background-color: #FAFAFA;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
 .icon{
     height:15px;
     width: auto;
 }
+.nav_bar{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    gap: 10px;
+    background-color: #FFFFFF;
+}
+.john{
+    font-family: 'Roboto';
+    font-size: 16px;
+}
 .menu{
-    margin-top: 34px;
-    margin-left: 29px;
+    width: 18px;
+    height: auto;
+    padding: 34px 0px 34px 29px;
 }
 .comp_logo{
-    margin-top: 25px;
-    margin-left: 25px;
+    width:142px;
+    height: auto;
+    padding: 25px 0px 30px 25px;
 }
-.search{
-    margin-top: 32px;
+.search_ip{
     margin-left: 77px;
-    height: 15px;
-    width: auto;
+    border: none;
+    padding: 33px 0px 30px 0px;
 }
-.search_input{
+.search_ip:focus{
     outline: none;
+}
+.notif{
+    height: 22px;
+    width: auto;
+    margin-left: 700px;
+    padding: 21px 21px 30px;
+}
+.profile_icon{
+    width: 44px;
+    height: auto;
+    padding: 18px 0px 18px 0px;
+}
+.dropdown{
+    width: 30px;
+    height:28px;
+    border:none;
+    margin:30px 14px 31px 0px;
+    background-color: #FFFFFF;
+}
+.sidebar{
+    width: 242px;
+    height: 1500px;
+    border: none;
+    background-color: #FFFFFF;
+    top: 80px;
+    float: left;
+     
     
+}
+.sidebar_contents{
+    padding-left: 48px;
+    padding-top: 22px;
+    padding-right: 75px;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+.active{
+    color: #C8242F;
+}
+.sidebar{
+    float: left;
+    
+}
+.heading{
+    font-size: 30px;
+    font-family: 'Roboto Medium';
+    width: 146px;
+    height: auto;
+    color: #000000;
+}
+.content_div{
+    margin-left: 290px;
+    margin-top: 41px;
+}
+.info{
+    display: flex;
+    width: 1217px;
+    gap: 30px;
+    background-color: #FFFFFF;
+    
+   
+}
+.info_img{
+    width: 28px;
+    height: auto;
+    
+    
+}
+.info_text{
+    
+    font-family: 'Roboto';
+    white-space: nowrap;
+    color: #3E3E3E;
+    font-size: 16px;
+    width: 219px;
+    height: 116px;
+    align-items:center ;
+    
+    
+}
+.num{
+    font-size: 25px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+}
+.flex2{
+    display: flex;
+    gap: 30px;
+}
+.sales{
+   
+    margin-top: 53px;
+    width: 802px;
+    height: 400px;
+    
+}
+.saletxt{
+    width: 43px;
+    height: auto;
+    color: #3E3E3E;
+    font-family: 'Roboto Medium';
+    
+    justify-content: flex-start;
+    font-size: 22px;
+    margin-top: 53px;
+}
+.condition{
+    float: right;
+    font-family: 'Roboto';
+    font-weight: 300px;
+    color: #ADADAD;
+    margin-top: 10px;
+} 
+.yearly{
+    color: #C8242F;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.sale{
+    width: 802px;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+.datagraph{
+    margin-top: 28px;
+}
+.sale_by_country{
+    width: 385px;
+    height: 398px;
+    float: right;
+    background-color: #FFFFFF;
+}
+.salebcountry{
+    
+    font-size: 22px;
+    font-family: 'Roboto Medium';
+    font-weight: normal;
+    color: #3E3E3E;
+    padding-left: 29px;
+    padding-top: 20px;
+    
+}
+.piechart{
+    display: block;
+    margin-left:  89px;
+    padding-top: 23px;
+}
+.country{
+    border: none;
+    margin-left: 49px;
+}
+table.country td{
+    padding: 5px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #3E3E3E;
+}
+.dot1 {
+    height: 10px;
+    width: 10px;
+    background-color: #C8242F;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot2 {
+    height: 10px;
+    width: 10px;
+    background-color: #A2B86C;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot3 {
+    height: 10px;
+    width: 10px;
+    background-color: #F16C20;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot4 {
+    height: 10px;
+    width: 10px;
+    background-color: #EBC844;
+    border-radius: 50%;
+    display: inline-block;
+}
+.invoice {
+    margin-top: 53px;
+    background-color: #FFFFFF;
+    margin-right: 51px;
+}
+.invoice_txt{
+    font-size: 22px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+}
+.invoice_tbl{
+    width: 1177px;
+    border: none;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 38px;
+    padding: 0px;
+    text-align: left;
+}
+table.invoice_tbl td{
+    padding-top: 27px;
+    padding-right: 60px;
+    color: #3E3E3E;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400px;
+}
+table.invoice_tbl th{
+    color: #ADADAD;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.paid{
+   color: #3CDD5F;
+}
+.failed{
+    color: #FF4545;
+}
+.pending{
+    color: #BABABA;
+}
+.analysis{
+    display: flex;
+}
+.subheading{
+    font-size: 22px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+    
+}
+.part{
+    margin-left: 29px;
+    margin-top: 44px;
+}
+.name_cl1{
+    height: 49px;
+    width: 1157px;
+    border-radius: 5px;
+}
+.dropdown_cl1{
+    height: 49px;
+    width: 1157px;
+    border-radius: 5px;
 }
