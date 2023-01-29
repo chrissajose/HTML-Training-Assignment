@@ -126,7 +126,7 @@ img.login_img{
 
 
 .container_d{
-    background-color: #FAFAFA;
+    background-color: red;
     height: 100vh;
     width: 100%;
     overflow: auto;
@@ -184,22 +184,27 @@ img.login_img{
 }
 .sidebar{
     width: 242px;
-    height: 1500px;
+    height: 1300px;
     border: none;
     background-color: #FFFFFF;
     top: 80px;
-    float: left;
-     
-    
+    float: left;   
+}
+.sidebar table{
+    width: 183px;
+    margin: 25px 29px 0px 30px;
+}
+.sidebar table td{
+    padding: 10px;
+    border-radius: 5px;
 }
 .sidebar_contents{
-    padding-left: 48px;
-    padding-top: 22px;
-    padding-right: 75px;
+    
     font-family: 'Roboto';
     font-size: 16px;
 }
-.active{
+.sidebar table tr:nth-child(1){
+    background-color: pink;
     color: #C8242F;
 }
 .sidebar{
@@ -216,18 +221,20 @@ img.login_img{
 .content_div{
     margin-left: 290px;
     margin-top: 41px;
+    
 }
 .info{
     display: flex;
     width: 1217px;
     gap: 30px;
-    background-color: #FFFFFF;
-    
-   
+    background-color: red;
+    margin-top: 22px;
 }
 .info_img{
     width: 28px;
     height: auto;
+    padding: 41px 0px 41px 38px;
+        
     
     
 }
@@ -239,9 +246,14 @@ img.login_img{
     font-size: 16px;
     width: 219px;
     height: 116px;
-    align-items:center ;
+    /*padding-top: 41px;
+    padding-left: 38px;*/
+    background-color: #FFFFFF;
     
-    
+}
+.text{
+    float: right;
+    padding: 21px;
 }
 .num{
     font-size: 25px;
@@ -251,6 +263,8 @@ img.login_img{
 .flex2{
     display: flex;
     gap: 30px;
+    margin-top: 30px;
+    width: auto ;
 }
 .sales{
    
@@ -260,12 +274,11 @@ img.login_img{
     
 }
 .saletxt{
-    width: 43px;
-    height: auto;
+    
     color: #3E3E3E;
     font-family: 'Roboto Medium';
     
-    justify-content: flex-start;
+    
     font-size: 22px;
     margin-top: 53px;
 }
@@ -282,18 +295,24 @@ img.login_img{
     text-underline-offset: 8px;
 }
 .sale{
-    width: 802px;
+    width: auto;
     height: 400px;
     background-color: #FFFFFF;
+    padding-top: 23px;
+    padding-left: 29px;
+    padding-right: 20px;
 }
 .datagraph{
     margin-top: 28px;
 }
 .sale_by_country{
-    width: 385px;
+    width: 350px;
     height: 398px;
     float: right;
     background-color: #FFFFFF;
+    padding-top: 23px;
+        padding-left: 29px;
+        padding-right: 20px;
 }
 .salebcountry{
     
@@ -301,13 +320,12 @@ img.login_img{
     font-family: 'Roboto Medium';
     font-weight: normal;
     color: #3E3E3E;
-    padding-left: 29px;
-    padding-top: 20px;
+    
     
 }
 .piechart{
     display: block;
-    margin-left:  89px;
+    margin-left: 60px;
     padding-top: 23px;
 }
 .country{
@@ -351,12 +369,22 @@ table.country td{
 .invoice {
     margin-top: 53px;
     background-color: #FFFFFF;
-    margin-right: 51px;
+    width: min-content;
+    padding-left: 35px;
+    padding-top: 22px;
+    height: 558px;
 }
 .invoice_txt{
     font-size: 22px;
     font-family: 'Roboto Medium';
     color: #3E3E3E;
+}
+.invoice u{
+    color: #C8242F;
+    float: right;
+    margin-right: 29px;
+    text-underline-offset: 2px;
+    font-family: 'Roboto';
 }
 .invoice_tbl{
     width: 1177px;
@@ -394,11 +422,21 @@ table.invoice_tbl th{
 .analysis{
     display: flex;
 }
+.subcontent{
+    background-color: #FFFFFF;
+    width: 1218px;
+}
 .subheading{
     font-size: 22px;
     font-family: 'Roboto Medium';
     color: #3E3E3E;
+    margin-bottom: 15px;
     
+}
+.part1{
+    margin-left: 29px;
+        margin-top: 44px;
+        padding-top: 12px;
 }
 .part{
     margin-left: 29px;
@@ -408,9 +446,220 @@ table.invoice_tbl th{
     height: 49px;
     width: 1157px;
     border-radius: 5px;
+    border: 1px solid #ADADAD;
 }
-.dropdown_cl1{
-    height: 49px;
+.dropdownbtn {
+
     width: 1157px;
+    height: 49px;
     border-radius: 5px;
+    text-align: left;
+    border: 1px solid #ADADAD;
+    font-family: 'Roboto';
+    
+}
+.textarea{
+    overflow: auto;
+    width: 1157px;
+    height: 130px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+.toppart{
+    display: grid;
+    grid-template-columns: 563px 563px;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.name2{
+    width: 563px;
+    height: 49px;
+    border-radius: 5px;
+    border: 1px solid #ADADAD;
+}
+.username2{
+    width: 563px;
+        height: 49px;
+        border-radius: 5px;
+        border: 1px solid #ADADAD;
+}
+.password2{
+    width: 563px;
+        height: 49px;
+        border-radius: 5px;
+        border: 1px solid #ADADAD;
+}
+.toppart select{
+    width: 563px;
+        height: 49px;
+        border-radius: 5px;
+        border: 1px solid #ADADAD;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 364px 364px 364px;
+    column-gap: 32px;
+
+}
+.text_g3{
+    border: 1px solid #C8242F;
+    border-radius: 5px;
+    height: 47px;
+}
+.pswd_g3{
+    border: 1px solid #ADADAD;
+        border-radius: 5px;
+        height: 47px;
+}
+.name_g3{
+    border: 1px dashed #ADADAD;
+        border-radius: 5px;
+        height: 47px;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: 266px 266px 266px 266px;
+    grid-template-rows: 47px;
+    column-gap: 31px;
+}
+.designation_g4{
+    border: 1px solid #FF3C3C;
+    border-radius: 5px;
+}
+.name_g4{
+    border: 1px solid #ADADAD;
+        border-radius: 5px;
+}
+.dropdown_g4{
+    border: 1px solid #ADADAD;
+        border-radius: 5px;
+}
+.section{
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Roboto Medium';
+    color: #3E3E3E;
+    margin-bottom: 15px;
+}
+.file{
+    cursor: pointer;
+    width: 124px;
+    height: 36px;
+    border: 1px solid #C8242F;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    color: #C8242F;
+    font-family: 'Roboto';
+}
+.no-item{
+    float: right;
+    margin-right: 954px;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #ADADAD;
+}
+.options_g{
+    display: grid;
+    column-gap: 42px;
+    grid-template-columns: 100px 100px;
+}
+.radio input{
+    appearance: none;
+    
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+    
+        border: 2px solid #999;
+        transition: 0.2s all linear;
+        margin-right: 5px;
+    
+        position: relative;
+        top: 4px;
+}
+.radio input:checked{
+border: 6px solid #C8242F;
+
+}
+.options{
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: #3E3E3E;
+    margin-left: 9px;
+}
+.snackbar{
+    display: grid;
+    grid-template-columns: 563px 563px;
+    grid-template-rows: 44px 44px;
+    gap: 33px;
+}
+.snackbar img{
+    height: 15px;
+    width: auto;
+}
+.error{
+    border: 1px solid #FF3535;
+    padding: 10px;
+    border-radius: 5px;
+}
+.information{
+    border: 1px solid #00B9E1;
+    border-radius: 5px;
+    padding: 10px;
+}
+.warning{
+    border: 1px solid #FFA800;
+    border-radius: 5px;
+    padding: 10px;
+}
+.success{
+    border: 1px solid #00AF27;
+        border-radius: 5px;
+    padding: 10px;
+}
+.error_text{
+    color: #FF3535 ;
+    font-family: "Roboto";
+    margin-left: 5px;
+}
+.info_text{
+    color: #00B9E1;
+    font-family: "Roboto";
+    margin-left: 5px;
+}
+.warning_text{
+    color: #FFA800;
+    font-family: 'Roboto';
+    margin-left: 5px;
+}
+.success_text{
+    color: #00AF27;
+    font-family: 'Roboto';
+    margin-left: 5px;
+}
+.primary{
+    width: 124px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    border: #C8242F;
+}
+.primary span{
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.secondary{
+    width: 124px;
+        height: 45px;
+    background-color: #FFFFFF;
+        border-radius: 23px;
+        border: 1px solid #C8242F;
+        margin-left: 10px;
+}
+.secondary span{
+    font-family: 'Roboto';
+        font-size: 18px;
+        color: #C8242F;
 }
