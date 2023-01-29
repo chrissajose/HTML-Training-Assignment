@@ -126,7 +126,7 @@ img.login_img{
 
 
 .container_d{
-    background-color: red;
+    background-color: #FAFAFA;
     height: 100vh;
     width: 100%;
     overflow: auto;
@@ -184,33 +184,34 @@ img.login_img{
 }
 .sidebar{
     width: 242px;
+    
     height: 1300px;
     border: none;
     background-color: #FFFFFF;
     top: 80px;
     float: left;   
+
 }
 .sidebar table{
     width: 183px;
     margin: 25px 29px 0px 30px;
+    font-family: 'Roboto';
+        font-size: 16px;
 }
 .sidebar table td{
     padding: 10px;
     border-radius: 5px;
 }
-.sidebar_contents{
-    
-    font-family: 'Roboto';
-    font-size: 16px;
-}
-.sidebar table tr:nth-child(1){
+
+.dashboard tr:nth-child(1){
     background-color: pink;
     color: #C8242F;
 }
-.sidebar{
-    float: left;
-    
+.analysis tr:nth-child(2) {
+    background-color: pink;
+    color: #C8242F;
 }
+
 .heading{
     font-size: 30px;
     font-family: 'Roboto Medium';
@@ -227,7 +228,7 @@ img.login_img{
     display: flex;
     width: 1217px;
     gap: 30px;
-    background-color: red;
+    background-color: #FAFAFA;
     margin-top: 22px;
 }
 .info_img{
@@ -435,13 +436,20 @@ table.invoice_tbl th{
 }
 .part1{
     margin-left: 29px;
-        margin-top: 44px;
+        margin-top: 22px;
         padding-top: 12px;
 }
 .part{
     margin-left: 29px;
     margin-top: 44px;
 }
+.grid1{
+    display: grid;
+    row-gap: 21px;
+    grid-template-columns: 1157px;
+}
+
+
 .name_cl1{
     height: 49px;
     width: 1157px;
@@ -470,12 +478,23 @@ table.invoice_tbl th{
     grid-template-columns: 563px 563px;
     column-gap: 30px;
     row-gap: 20px;
+    position: relative;
 }
 .name2{
     width: 563px;
     height: 49px;
     border-radius: 5px;
     border: 1px solid #ADADAD;
+}
+.username_lbl{
+    position: absolute;
+
+  top: -7px;
+  left: 610px;
+  background-color: #FFFFFF;
+  color: #ADADAD;
+  font-family: 'Roboto';
+  font-size: 12px;
 }
 .username2{
     width: 563px;
@@ -499,12 +518,42 @@ table.invoice_tbl th{
     display: grid;
     grid-template-columns: 364px 364px 364px;
     column-gap: 32px;
+    position: relative;
 
 }
 .text_g3{
     border: 1px solid #C8242F;
     border-radius: 5px;
     height: 47px;
+    
+    
+}
+.label_name{
+    position: absolute;
+    top: -7px;
+    left: 12px;
+    background-color: #FFFFFF;
+    color: #ADADAD;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+.label_pswd{
+    position: absolute;
+    top: -7px;
+    left: 400px;
+    background-color: #FFFFFF;
+    color: #ADADAD;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+.label_username{
+    position: absolute;
+        top: -7px;
+        left: 800px;
+        background-color: #FFFFFF;
+        color: #ADADAD;
+        font-family: 'Roboto';
+        font-size: 12px;
 }
 .pswd_g3{
     border: 1px solid #ADADAD;
@@ -521,6 +570,34 @@ table.invoice_tbl th{
     grid-template-columns: 266px 266px 266px 266px;
     grid-template-rows: 47px;
     column-gap: 31px;
+    position: relative;
+}
+.ui_label{
+    position: absolute;
+        top: -7px;
+        left: 10px;
+        background-color: #FFFFFF;
+        color: #FF3B3B;
+        font-family: 'Roboto';
+        font-size: 12px;
+}
+.error_ip{
+    position: absolute;
+        top: 60px;
+        left: 10px;
+        background-color: #FFFFFF;
+        color: #FF3B3B;
+        font-family: 'Roboto';
+        font-size: 12px;
+}
+.error_ip2{
+    position: absolute;
+        top: 60px;
+        left: 300px;
+        background-color: #FFFFFF;
+        color: #ADADAD;
+        font-family: 'Roboto';
+        font-size: 12px;
 }
 .designation_g4{
     border: 1px solid #FF3C3C;
@@ -623,7 +700,7 @@ border: 6px solid #C8242F;
     font-family: "Roboto";
     margin-left: 5px;
 }
-.info_text{
+.information_text{
     color: #00B9E1;
     font-family: "Roboto";
     margin-left: 5px;
@@ -662,4 +739,44 @@ border: 6px solid #C8242F;
     font-family: 'Roboto';
         font-size: 18px;
         color: #C8242F;
+}
+.tab{
+    overflow: hidden;
+    border: 0px;
+}
+.tab button{
+    float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        background-color: #FFFFFF;
+        font-size: 15px;
+        font-family: 'Roboto';
+        font-weight: 500px;
+        color: #ADADAD;
+        
+        
+}
+.tab button:hover {
+    color: #C8242F;
+    text-decoration: underline;
+    text-underline-offset: 18px;
+    font-family: 'Roboto Medium';
+    
+}
+
+.tab_content{
+    float: left;
+    /*margin-top: 26px;
+    margin-left: 30px;*/
+   
+    
+    border-top: 1px solid #ADADAD;
+    padding-top: 26px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #3E3E3E;
+    padding-bottom: 36px;
 }

@@ -30,9 +30,9 @@
 
         <!-- Sidebar -->
         <div class="sidebar">
-            <table>
+            <table class="analysis">
                 <tr>
-                    <td id="#active"><span class=sidebar_contents><img src="images/dashboard-active.svg" class="icon">
+                    <td><span class=sidebar_contents><img src="images/dashboard-active.svg" class="icon">
                             Dashboard</span></td>
                 </tr>
                 <tr>
@@ -70,26 +70,31 @@
 
                 <div class="part1">
                     <p class="subheading">One Column</p>
-                    <input type="text" name="name" placeholder="Name" class="name_cl1"><br>
-
-                    <div class="dropdown">
-                        <button class="dropdownbtn">Dropdown</button>
-                            <!--<div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>-->
+                    <div class="grid1">
+                        <input type="text" name="name" placeholder="Name" class="name_cl1">
                         
+                        
+                            <button class="dropdownbtn">Dropdown</button>
+                            <!--<div class="dropdown-content">
+                                                        <a href="#">Link 1</a>
+                                                        <a href="#">Link 2</a>
+                                                        <a href="#">Link 3</a>
+                                                    </div>-->
+                            <textarea class="textarea" placeholder="Multiple Line"></textarea>
                     </div>
+                    
+                        
+                    
 
-                    <textarea class="textarea" placeholder="Multiple Line"></textarea>
+                    
                 </div>
 
                 <div class="part">
                     <p class="subheading">Two Column</p>
                     <div class="toppart">
                         <input type="text" name="name2" class="name2" placeholder="Name">
-                        <input type="text" name="username" class="username2" placeholder="Username">
+                        <label for="username2" class="username_lbl">Username</label>
+                        <input type="text" name="username" class="username2" placeholder="john doe">
                     <!--</div>
 
                     <div class="bottom_part">-->
@@ -104,8 +109,13 @@
                 <div class="part">
                     <p class="subheading">Three Column</p>
                     <div class="grid3">
-                        <input type="text" name="focus" class="text_g3">
+                        <label for="text_g3" class="label_name"> Focus</label>
+                        <input type="text" name="focus" class="text_g3" required>
+
+                        <label for="text_g3" class="label_pswd"> Password</label>
                         <input type="password" name="password" placeholder="Password" class="pswd_g3">
+
+                        <label for="text_g3" class="label_username">Disabled</label>
                         <input type="text" name="name" placeholder="John Doe" class="name_g3"><br>
                     </div>
                     
@@ -114,9 +124,16 @@
                 <div class="part">
                     <p class="subheading">Four Column</p>
                     <div class="grid4">
+                        <label for="designation_g4" class="ui_label">Designation</label>
                         <input type="text" name="name2" placeholder="UI Designer" class="designation_g4">
+                        <span class="error_ip">Enter Valid Data</span>
+
                         <input type="text" name="name2" placeholder="Name" class="name_g4">
+                        <span class="error_ip2">Enter your full Name as per ID</span>
+
+                        <label for="username2" class="username_lbl">Username</label>
                         <input type="text" name="username" placeholder="Username" class="name_g4">
+
                         <select placeholder="Dropdown" class="dropdown_g4">
                             <option selected>Drop Down</option>
                         </select>
@@ -157,7 +174,7 @@
                     <div class="snackbar">
                     
                     <div class="error"><img src="images/error-icon.svg"><span class="error_text">This is an error message</span> </div>
-                    <div class="information"><img src="images/info-icon.svg"><span class="info_text">This is an information message</span></div>
+                    <div class="information"><img src="images/info-icon.svg"><span class="information_text">This is an information message</span></div>
                     <div class="warning"><img src="images/warning-icon.svg"><span class="warning_text">This is a warning message</span></div>
                     <div class="success"><img src="images/success-icon.svg"><span class="success_text">This is a success message</span></div>
                     
@@ -171,7 +188,19 @@
 
                     <p class="section">Tabs </p>
 
-                    Tab1 TAbs2 
+                    <div class="tab">
+                        <button class="tablinks"  onclick= >Tab1</button>
+                        <button class="tablinks" onclick=>Tab2</button>
+                        <button class="tablinks" onclick=>Tab3</button><br>
+                        
+                        <div class="tab_content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
