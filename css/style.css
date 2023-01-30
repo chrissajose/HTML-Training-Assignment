@@ -1,331 +1,133 @@
-
-html,body{
+*{
+    margin-right: 0;
     padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    background-color:#FAFAFA ;
-    overflow: auto;
+}
+.body{
+    background-color: #FAFAFA ;
+    font: Roboto;
 }
 .container{
-    background-color: #FAFAFA;
-    min-height: 100%;
+    position: relative;
+    display: flex;
+    column-gap: 100px;
+    height: 100vh;
 }
-.login {
-    margin-top: 23.13px;
+.login_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    height: 100%;
 }
+.login_img{
+    border-radius: 50%;
+        box-shadow: 0px 4px 31px #0000000A;
+        border: 20px solid #FFFFFF;
+        width: 100% ;
+        max-width: 600px;
+}
+.right_box{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    
+        margin-top: 50px;
+}
+.logo{
+    width: 300px;
+}
+.tagline{
+    color: #3E3E3E;
+    font-size: 40px;
+}
+.tagline {
 
-.login_button {
-    width: 429px;
-}
-
-.butn_login {
-    border-radius: 23px;
-    margin-top: 31px;
-    width: 138px;
-    height: 45px;
-    background-color: #C8242F;
-    border: #C8242F;
-}
-
-.login_text {
-    color: white;
-    font-size: 18px;
-    width: 45px;
-    height: 24px;
+    color: #3E3E3E;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+    width: 100%;
 }
-
-.sign_up {
-    margin-top: 23.21px;
+.exp {
+    color: #C8242F;
+    font-family: 'Roboto Black', sans-serif;
+    font-weight: 900px;
+    width: 100%;
 }
+.loginacc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 25px;
+    color: #3E3E3E;
 
-.new_memb {
-    width: 160px;
-    height: 24px;
-    font-size: 15px;
+}
+::placeholder {
     color: #ADADAD;
-    font-family: 'Roboto', sans-serif;
-
+    padding-left: 20px;
+    font-size: medium;
+}
+input {
+     width: 26vw;
+     height: 6vh;
+     border: 1px solid #ADADAD;
+     border-radius: 5px;
+ }
+.butn_login{
+    width: 7vw;
+    background-color: #C8242F ;
+    border-radius: 23px;
+}
+.frg_pswd{
+    color: #ADADAD;
+        text-decoration: none;
+        position: relative;
+        margin-left: 140px;
+        margin-top: 20px;
+}
+.new_memb {
+    color: #ADADAD;
+    margin-top: 24px;
 }
 
 .reg_link {
     color: #C8242F;
-    height: 20px;
-    width: 80px;
+    text-decoration: none;
 }
- @media only screen and (min-width: 1024px){
-    
-
+@media screen and (max-width: 820px) {
     .login_image{
-        
-        margin-left: 166px;
-        margin-top: 72px;
-        margin-bottom: 72px;
-        
+        opacity: 0;
+        justify-content: center;
+
     }
-    img.login_img{
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0px 4px 31px #0000000A;;
-        border: 20px solid #FFFFFF;
-        
-    }
-    .right_box{
-        float:right;
-        margin-top: 34px;
-        margin-right: 155px;
-        
-        
-    }
-    #comp_logo{
-        top: 106px;
-        left: 906px;
-        width: 272px;
-        height: 58px;
-    }
-    .tagline{
-        
-        color: #3E3E3E;
-        align-items: left;
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300px;
-        margin-top: 19.17px;
+
+    .right_box {
+        position: absolute;
         width: 100%;
-    }
-    .exp{
-        color:#C8242F;
-        font-family: 'Roboto Black', sans-serif;
-        font-weight: 900px;
-        width: 100%;
-    }
-    .loginacc{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400px;
-        font-size: 25px;
-        color: #3E3E3E;
-        margin-top: 32px;
-        height:33px;
-        width: 260px;
-
-    }
-    .usernm{
-        border: 1px solid #ADADAD;
-        border-radius: 5px;
-        margin-bottom: 27px;  
-        margin-top: 24px;
-        width: 429px;
-        height: 49px;
-    }
-    .pswd{
-        border: 1px solid #ADADAD;
-        border-radius: 5px;
-        width: 429px;
-        height: 49px;
-    }
-    .login{
-        margin-top: 23.13px;
-    }
-    .login_button{
-        width:429px;
-    }
-    .butn_login{
-        border-radius: 23px;
-        margin-top: 31px;
-        width: 138px;
-        height: 45px;
-        background-color: #C8242F;
-        border: #C8242F;
+        margin-left: 10px;
+        justify-content: center;
     }
 
-    .frg_pswd{
-        color: #ADADAD;
-        width: 121px;
-        height: 20px;
-        float:right;
-        margin-top: 43px;
-        margin-left: 170px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-
+    .comp_logo {
+        width: 500px;
     }
 
-}
-
- @media only screen and (min-width: 200px) and (max-width: 767px){
-    .container{
-        height: 100%;
+    .tagline {
+        font-size: 23px;
     }
-     
-    .login_image {
-        margin: 0%;
-        }
-    .login_img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0px 4px 31px #0000000A;
-            
-            border: 20px solid #FFFFFF;
-            width: 50%;
-        }
-        .tagline {
-            font-size: 25px;
-            margin-top: auto;
-        }
-        .comp_logo{
-            width: 50%;
-        }
-        .frg_pswd{
-            color: #ADADAD;
-                
-                margin-top: 43px;
-                margin-left: 0px;
-                font-family: 'Roboto';
-                font-size: 15px;
-        }
-        .right_box{
-            width: 100%;
-            margin-left: 20px;
 
-        }
-        #comp_logo {
-            width: 50%;
-        }
-        
-        .tagline {
-        
-        color: #3E3E3E;
-        align-items: left;
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300px;
-        margin-top: 19.17px;
-        width: 100%;
-                }
-        
-        .exp {
-        color: #C8242F;
-        font-family: 'Roboto Black', sans-serif;
-        font-weight: 900px;
-        width: 100%;
-        }
-        
-        .loginacc {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400px;
-        font-size: 20px;
-        color: #3E3E3E;
-        margin-top: 32px;
-        height: 33px;
-        width: 260px;
-        }
-        
-        .usernm {
-        border: 1px solid #ADADAD;
-        border-radius: 5px;
-        margin-bottom: 27px;
-        margin-top: 24px;
-        width: 200px;
-        height: 50px;
-        }
-        
-        .pswd {
-        border: 1px solid #ADADAD;
-        border-radius: 5px;
-        width: 200px;
-        height: 50px;
-        }
-}
- @media only screen and (min-width: 768px) and (max-width: 1024px){
-    .right_box{
-        margin-left: 250px;
+    input {
+        width: 250px;
     }
-        .login_image {
-            margin: 0%;
-        }
-    
-        .login_img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0px 4px 31px #0000000A;
-    
-            border: 20px solid #FFFFFF;
-            width: 50%;
-        }
-    
-        .tagline {
-            font-size: 25px;
-            margin-top: auto;
-        }
-    
-        .comp_logo {
-            width: 50%;
-        }
-    
-        .frg_pswd {
-            color: #ADADAD;
-    
-            margin-top: 43px;
-            margin-left: 0px;
-            font-family: 'Roboto';
-            font-size: 15px;
-        }
-    
-        
-        #comp_logo {
-            width: 50%;
-        }
-    
-        .tagline {
-    
-            color: #3E3E3E;
-            align-items: left;
-            font-size: 20px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300px;
-            margin-top: 19.17px;
-            width: 100%;
-        }
-    
-        .exp {
-            color: #C8242F;
-            font-family: 'Roboto Black', sans-serif;
-            font-weight: 900px;
-            width: 100%;
-        }
-    
-        .loginacc {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400px;
-            font-size: 20px;
-            color: #3E3E3E;
-            margin-top: 32px;
-            height: 33px;
-            width: 260px;
-        }
-    
-        .usernm {
-            border: 1px solid #ADADAD;
-            border-radius: 5px;
-            margin-bottom: 27px;
-            margin-top: 24px;
-            width: 200px;
-            height: 50px;
-        }
-    
-        .pswd {
-            border: 1px solid #ADADAD;
-            border-radius: 5px;
-            width: 200px;
-            height: 50px;
-        }
+
+    .butn_login {
+        width: 100px
+    }
+
+    .frg_pswd {
+        margin-left: 60px;
+    }
+
 }
 /*dashboard styles*/
 .container_d{
