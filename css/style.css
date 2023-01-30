@@ -10,15 +10,12 @@ html,body{
 .container{
     background-color: #FAFAFA;
     min-height: 100%;
-    
 }
-
 .login_image{
     
     margin-left: 166px;
     margin-top: 72px;
     margin-bottom: 72px;
-    
     
 }
 img.login_img{
@@ -27,9 +24,8 @@ img.login_img{
     box-shadow: 0px 4px 31px #0000000A;;
     border: 20px solid #FFFFFF;
     
-    
 }
-.right_box{/*right_box*/
+.right_box{
     float:right;
     margin-top: 34px;
     margin-right: 155px;
@@ -127,34 +123,8 @@ img.login_img{
     height: 20px;
     width: 80px;
 }
-/*
-@media screen and (min-width: 360px) and (max-width:425px){
-    .container {
-            background-color: #FAFAFA;
-            width: 100%;
-    
-        }
-    .login_image {
-            margin:0px;
-    
-        }
-    
-        img.login_img {
-            border-radius: 50%;
-            
-            box-shadow: 0px 4px 31px #0000000A;
-            width: 80%;
-            border: 20px solid #FFFFFF;
-            margin-left: 20px;
-    
-        }
-    
-}
-@media screen and (min-width: ) {
-    
-}  */
 
-/*Dashboard*/
+
 .container_d{
     background-color: #FAFAFA;
     height: 100vh;
@@ -222,7 +192,6 @@ img.login_img{
     float: left;   
 
 }
-
 .sidebar table{
     width: 183px;
     margin: 25px 29px 0px 30px;
